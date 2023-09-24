@@ -13,6 +13,7 @@ a {
 
 .header-logo {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   color: var(--IRIS, #4d5ae5);
   font-family: Raleway;
   font-size: 18px;
@@ -32,9 +33,7 @@ a {
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
-.header-logo {
-  font-style: normal;
-}
+
 .header-adress {
   font-style: normal;
 }
