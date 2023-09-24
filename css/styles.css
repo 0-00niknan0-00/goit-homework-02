@@ -1,8 +1,8 @@
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
+  color: #434455;
 }
 ul {
   list-style-type: none;
@@ -12,13 +12,13 @@ a {
 }
 
 .header-logo {
-  width: 44px;
+  font-family: "Raleway";
   color: var(--IRIS, #4d5ae5);
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 .header-studio-logo {
@@ -33,16 +33,12 @@ a {
   line-height: 1.5em;
   letter-spacing: 0.02;
 }
+.header-logo {
+  font-style: normal;
+}
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active {
-  display: flex;
-  width: 48px;
-  height: 52px;
-  padding-bottom: 0px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
   flex-shrink: 0;
   color: var(--OCEAN, #404bbf);
   font-family: Roboto;
@@ -64,7 +60,6 @@ a {
   background: var(--NAVY-BLUE, #2e2f42);
 }
 .title {
-  width: 496px;
   color: var(--WHITE, #fff);
   text-align: center;
   font-family: Roboto;
@@ -76,28 +71,32 @@ a {
 }
 .button-title {
   color: var(--WHITE, #fff);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.04em;
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .button-title:hover,
 .button-title:focus {
-  border-radius: 4px;
   background: var(--OCEAN, #404bbf);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.visually-hidden {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .colleagues {
   background: var(--CLOUD, #f4f4fd);
 }
+.colleagues-bye {
+  background-color: #ffffff;
+}
+
 .colleagues-people,
 .our-portfolio-document {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -105,11 +104,12 @@ a {
   font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.11em;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.priority-hello-introduction .colleagues-bye-introduction,
+.priority-hello-introduction,
+.colleagues-bye-introduction,
 .our-portfolio-offer-introduction {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
@@ -121,7 +121,8 @@ a {
 .address-item-link,
 .priority-hello-paragraph,
 .colleagues-bye-paragraph,
-.our-portfolio-offer-paragraph {
+.our-portfolio-offer-paragraph,
+.bye-bye-bye {
   color: var(--SLATE, #434455);
   font-family: Roboto;
   font-size: 16px;
@@ -145,32 +146,18 @@ a {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16px;
+  line-height: 1.17px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
 }
 
 .footer-studio-logo {
-  flex-direction: column;
   color: var(--CLOUD, #f4f4fd);
-}
-.bye-bye-bye {
-  color: var(--CLOUD, #f4f4fd);
-  font-family: Roboto;
-  font-size: 16px;
-
-  font-weight: 400;
-  line-height: 1.5em;
-  letter-spacing: 0.02em;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
   margin: -1px;
-  border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
